@@ -7,3 +7,5 @@ First created by http://www.reddit.com/u/bicycle for /r/trees, but it can be use
 To automatically upload all snaps received, you need to run a Cron job for some interval that performs "curl http://www.site.com/snapchatbot.php".
 
 Supports both videos and images.
+
+Requires cURL & PHP5-CURL module
