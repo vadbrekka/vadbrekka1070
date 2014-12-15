@@ -1,8 +1,8 @@
 <?php
 require_once("src/snapchat.php");
 
-$username = 'entstorydeleter';
-$password = 'entjJAPLQ$RQ*@2ent';
+$username = 'SNAPCHAT_USERNAME';
+$password = 'SNAPCHAT_PASSWORD';
 $snapchat = new Snapchat($username, $password); //create new instance of class Snapchat
 $snaps = $snapchat->getSnaps(); //get feed
 $snaps = json_decode(json_encode($snaps), true); //turn into php array
