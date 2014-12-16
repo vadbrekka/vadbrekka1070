@@ -25,11 +25,11 @@ foreach ($dir as $fileinfo) {
 <body onload=\"javascript:document.getElementById('overlay').style.display='none';\">";
 	        echo "<span id='overlay' class='overlay'></span>
 	        <img style='height: 360px; width: 240px;' src='media/temp/".$fileinfo->getFilename()."' /><br />";
-	        if(intval(file_get_contents("log/count")) <= 150) {
+	        if(intval(file_get_contents("log/count")) < intval($config['max_snaps_per_hour']-1)) {
 	        	echo "<a class='myButton' type='submit' onclick='tapbutton();' href='vote.php?file=".$fileinfo->getFilename()."&vote=yes' />ACCEPT</a>";
 
     		} else {
-	        	echo "<a class='myButton' type='submit' onclick='alert(\"Queue full for this hour! Max snaps of ".intval(file_get_contents("log/count"))." reached. Resets at the top of every hour.\");' href='#' />ACCEPT</a>";
+	        	echo "<a class='myButton' type='submit' onclick='alert(\"Queue full for this hour! Max snaps of ".$config['max_snaps_per_hour']." reached. Resets at the top of every hour.\");' href='#' />ACCEPT</a>";
 
     		}
 	        echo "<a class='myButtonred' type='submit' onclick='tapbutton();' href='vote.php?file=".$fileinfo->getFilename()."&vote=no' />REJECT</a>
