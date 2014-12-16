@@ -25,7 +25,7 @@ foreach ($dir as $fileinfo) {
 <body onload=\"javascript:document.getElementById('overlay').style.display='none';\">";
 	        echo "<span id='overlay' class='overlay'></span>
 	        <img style='height: 360px; width: 240px;' src='media/temp/".$fileinfo->getFilename()."' /><br />";
-	        if(intval(file_get_contents("log/count")) != 150) {
+	        if(intval(file_get_contents("log/count")) >= 150) {
 	        	echo "<a class='myButton' type='submit' onclick='tapbutton();' href='vote.php?file=".$fileinfo->getFilename()."&vote=yes' />ACCEPT</a>";
 
     		} else {
