@@ -10,6 +10,8 @@ $config['password'] = 'SNAPCHAT-PASSWORD';
 $config['adminpassword'] = 'ADMIN-PASSWORD'; //v2.1, does nothing now
 $config['secret'] = "secretj32h09"; //some random characters. DO NOT CHANGE IT except if you are starting a new installation.
 
+$config['moderation'] = true; //disable for instant posting
+
 $config['max_snaps_per_hour'] = 150;
 
 $config['NSFW'] = true; //v2.1
