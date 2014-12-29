@@ -17,13 +17,9 @@ foreach($snaps as $item) {
                 if($config['picturesallowed']) {
                     $data = $snapchat->getMedia($item['id']); //get received snap
                     if ($data != "") {
-                        $filename = time().'__'.$item['sender'].'.jpg';
-                        file_put_contents('media/temp/'.$filename, $data); //create temp file with the received snap
-                        if($config['moderation'] == false) {
-                            postImageStory($filename, mod_id(), $config['username'], $config['password']);
-                        }
-                    }
+                        file_put_contents('media/temp/'.time().'__'.$item['sender'].'.jpg', $data); //create temp file with the received snap
 
+                    }
                 }   
             } elseif($item['media_type'] == 1) { //if moving video
                 if($config['videosallowed']) {
