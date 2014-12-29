@@ -4,6 +4,7 @@ if(!defined("IN_STORYBOT")) {
 }
 require_once("src/snapchat.php");
 
+$config = array();
 $config['username'] = 'SNAPCHAT-USERNAME';
 $config['password'] = 'SNAPCHAT-PASSWORD';
 
