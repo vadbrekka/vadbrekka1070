@@ -53,7 +53,8 @@ abstract class SnapchatAgent {
 		CURLOPT_CONNECTTIMEOUT => 5,
 		CURLOPT_RETURNTRANSFER => TRUE,
 		CURLOPT_TIMEOUT => 10,
-		CURLOPT_HTTPHEADER =>array('Accept-Language: en'),
+		CURLOPT_USERAGENT => 'Snapchat/8.1.1 (Nexus 5; Android 21; gzip)',
+		CURLOPT_HTTPHEADER => array('Accept-Language: en'),
 	);
 
 	/**
