@@ -8,10 +8,10 @@ $config = array();
 $config['username'] = 'vadbrekka1070';
 $config['password'] = 'Elig1989';
 
-$config['adminpassword'] = 'ADMIN-PASSWORD'; //v2.1, does nothing now
+$config['adminpassword'] = 'Elig1989'; //v2.1, does nothing now
 $config['secret'] = "secretj32h09"; //some random characters. DO NOT CHANGE IT except if you are starting a new installation.
 
-$config['moderation'] = false; //disable for instant posting
+$config['moderation'] = true; //disable for instant posting
 
 $config['max_snaps_per_hour'] = 200;
 
