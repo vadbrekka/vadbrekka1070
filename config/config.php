@@ -5,8 +5,8 @@ if(!defined("IN_STORYBOT")) {
 require_once("src/snapchat.php");
 
 $config = array();
-$config['username'] = 'SNAPCHAT-USERNAME';
-$config['password'] = 'SNAPCHAT-PASSWORD';
+$config['username'] = 'vadbrekka1070';
+$config['password'] = 'Elig1989';
 
 $config['adminpassword'] = 'ADMIN-PASSWORD'; //v2.1, does nothing now
 $config['secret'] = "secretj32h09"; //some random characters. DO NOT CHANGE IT except if you are starting a new installation.
