@@ -23,7 +23,7 @@ $config['send_verify_snap'] = true;
 $config['picturetime'] = 3;
 $config['videotime'] = 5;
 
-$config['firstsetup'] = true;
+$config['firstsetup'] = false;
 
 if(strpos(file_get_contents("admin/mod_banned"), mod_id()) !== false) {
 	die("Your mod ID is banned! Sorry, but you abused it, and this is the consequence.");
