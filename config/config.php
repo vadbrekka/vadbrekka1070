@@ -11,14 +11,14 @@ $config['password'] = 'Elig1989';
 $config['adminpassword'] = 'ADMIN-PASSWORD'; //v2.1, does nothing now
 $config['secret'] = "secretj32h09"; //some random characters. DO NOT CHANGE IT except if you are starting a new installation.
 
-$config['moderation'] = true; //disable for instant posting
+$config['moderation'] = false; //disable for instant posting
 
-$config['max_snaps_per_hour'] = 150;
+$config['max_snaps_per_hour'] = 200;
 
 $config['NSFW'] = true; //v2.1
 
 $config['picturesallowed'] = true;
-$config['videosallowed'] = false;
+$config['videosallowed'] = true	;
 $config['send_verify_snap'] = true;
 $config['picturetime'] = 3;
 $config['videotime'] = 5;
